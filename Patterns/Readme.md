@@ -1,0 +1,1 @@
+This C++ file produce different kinds of patterns on compilation.
