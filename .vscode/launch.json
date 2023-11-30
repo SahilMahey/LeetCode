@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Dell/LeetCode",
-      "program": "c:/Users/Dell/LeetCode/build/Debug/outDebug",
+      "cwd": "c:/Users/Dell/LeetCode/swap_array_alternate",
+      "program": "c:/Users/Dell/LeetCode/swap_array_alternate/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
