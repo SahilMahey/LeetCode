@@ -1,3 +1,5 @@
+//I learnt a formula which can reverse the number and about INT_MAX AND INT_MIN
+
 class Solution {
 public:
     int answer = 0;

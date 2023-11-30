@@ -1,3 +1,5 @@
+//this was a good example of how to create another variable whihc can prevent us from keeping one part from the binary number whihc is neccessary from the ouputs
+
 class Solution {
 public:
     int bitwiseComplement(int n) {

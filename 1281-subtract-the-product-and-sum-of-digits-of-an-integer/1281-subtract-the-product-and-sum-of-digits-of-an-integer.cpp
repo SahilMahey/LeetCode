@@ -1,3 +1,5 @@
+//I learnt how to extract the digits from a number
+
 class Solution {
 public:
     int subtractProductAndSum(int n) {
