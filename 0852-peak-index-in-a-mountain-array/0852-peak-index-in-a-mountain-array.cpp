@@ -14,7 +14,7 @@ public:
             {
                 if (arr[mid+1] > arr[mid]  )
                 {
-                    start = mid;
+                    start = mid + 1;
                 }
                 else
                 {
