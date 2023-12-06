@@ -7,7 +7,6 @@ public:
         {
             sum = sum + element;
             sum_arr.push_back(sum);
-            cout << sum<<endl;
         }
         
         int left=0;
