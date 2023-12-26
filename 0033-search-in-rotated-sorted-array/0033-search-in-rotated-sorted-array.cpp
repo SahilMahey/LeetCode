@@ -6,7 +6,7 @@ public:
         int mid = (start + end)/2;
         int min = 10000;
         int index;
-        cout<<"hi";
+        
        while (start <= end )
         {
             if (nums[mid] < min)
@@ -25,13 +25,13 @@ public:
             }
              mid = (start + end)/2;
         }
-        cout<<(min);
+       
         
         if (min <= target && target <= nums[nums.size()-1])
         {
                 start = index;
                 end  = nums.size()-1;
-            cout << "hi";
+           
         }
         
         else
@@ -40,8 +40,7 @@ public:
                 end = index-1;
         }
         mid = (start + end)/2;
-        cout<<mid;
-        cout<<start << end;
+        
         while(start<=end)
         {
             if (nums[mid]==target)
