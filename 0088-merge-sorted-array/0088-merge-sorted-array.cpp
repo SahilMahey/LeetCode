@@ -4,8 +4,7 @@ public:
         int i = m-1;
         int j = n-1;
         int k = m+n-1;
-        cout << i <<j <<k;
-        while (i >= 0 && j >=0)
+        while (i >=0 && j >=0)
         {
             if (nums2[j] >= nums1[i])
             {
