@@ -18,15 +18,7 @@ public:
             mul_2.push_back(prod_2);
         }
         reverse(mul_2.begin(),mul_2.end());
-        for (auto a:mul_1)
-        {
-            cout<<a<< " ";
-        }
-        cout<<endl;
-        for (auto a:mul_2)
-        {
-            cout<<a<< " ";
-        }
+        
         c.push_back(mul_2[1]);
         for (int i = 1; i < mul_1.size()-1; i++)
         {
