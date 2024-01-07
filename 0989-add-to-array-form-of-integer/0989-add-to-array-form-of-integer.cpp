@@ -7,6 +7,7 @@ public:
         int i = num.size()-1;
         while (i >= 0)
         {
+            
             new_num  = (num[i] + carry + k%10);
             ans.push_back(new_num%10);
             carry = (new_num)/10;
