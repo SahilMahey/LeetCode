@@ -15,8 +15,7 @@ public:
             
         }
         
-        
-        while (k > 0 && carry > 0)
+        while (k > 0 || carry > 0)
         {
             new_num = k%10 + carry;
             ans.push_back(new_num%10);
@@ -24,19 +23,20 @@ public:
             k = k /10;
             
         }
-        if (carry > 0)
-        {
-            ans.push_back(carry);
-        }
         
-        while(k>0)
-        {
-          ans.push_back(k%10);
-          k = k / 10; 
-        }
-             
+//         if (carry > 0)
+//         {
+//             ans.push_back(carry);
+//         }
+        
+//         while(k > 0)
+//         {
+//           ans.push_back(k%10);
+//           k = k / 10; 
+//         }
         
         reverse(ans.begin(),ans.end());
+        
         return ans;
         
     }
