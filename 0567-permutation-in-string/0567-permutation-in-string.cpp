@@ -11,7 +11,6 @@ public:
         while (i <= (s2.length()-s1.length()))
         {
             p = s2.substr(i, s1.length());
-            
             sort(p.begin(),p.end());
             if(s1==p)
             {
