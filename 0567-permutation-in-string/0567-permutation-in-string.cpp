@@ -7,10 +7,11 @@ public:
         }
         int i = 0;
         string p;
+        sort(s1.begin(),s1.end());
         while (i <= (s2.length()-s1.length()))
         {
             p = s2.substr(i, s1.length());
-            sort(s1.begin(),s1.end());
+            
             sort(p.begin(),p.end());
             if(s1==p)
             {
