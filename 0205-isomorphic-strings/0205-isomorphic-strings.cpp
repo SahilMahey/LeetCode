@@ -7,6 +7,7 @@ public:
        {
             c[s[i]] = t[i];
             d[t[i]] = s[i];
+           
        }
        
         for (int i = 0; i < s.length(); i++)
