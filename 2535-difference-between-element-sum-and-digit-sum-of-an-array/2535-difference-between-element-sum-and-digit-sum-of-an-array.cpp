@@ -12,9 +12,7 @@ public:
         while (num > 0)
         {
             digit_sum = digit_sum + num %10;
-            cout<<num%10<<endl;
             num = num /10;
-            cout<<num<<endl;
             if (num == 0 && j < nums.size())
             {
                 num = nums[j];
