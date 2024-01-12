@@ -22,9 +22,8 @@ public:
              b[m[j]]++;
            }
           n = true;
-           for (int j = 0 && n; j < m.length();j++)
+           for (int j = 0; j < m.length();j++)
            {
-             
              if (!(a[m[j]]) || a[m[j]] != b[m[j]])
              {
                  n = false;
