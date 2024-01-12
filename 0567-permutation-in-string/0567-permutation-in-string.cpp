@@ -19,8 +19,6 @@ public:
        {
            
            b[s2[j] - 'a']++;
-           cout<<j<<"j";
-           
            if (k == s1.length()-1)
            {
                
