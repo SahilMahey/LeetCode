@@ -12,6 +12,7 @@ public:
                a[s1[j]]++;
        }
        string m = " ";
+        bool n;
        for (int i = 0; i <= s2.length()-s1.length(); i++)
        {
            m = s2.substr(i,s1.length());
@@ -20,15 +21,14 @@ public:
            {
              b[m[j]]++;
            }
-           bool n = true;
+          n = true;
            for (int j = 0 && n; j < m.length();j++)
            {
              
              if (!(b[s1[j]]) || a[m[j]] != b[m[j]])
              {
                  n = false;
-                
-             }
+            }
              
             
            }
