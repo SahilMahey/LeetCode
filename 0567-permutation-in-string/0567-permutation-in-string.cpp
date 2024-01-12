@@ -26,10 +26,7 @@ public:
                {
                    return true;
                }
-               else
-               {
-                   b[s2[j-(s1.length()-1)] - 'a']--;
-               }
+               b[s2[j-(s1.length()-1)] - 'a']--;
                k = s1.length()-1;
            }
            else
