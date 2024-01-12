@@ -19,27 +19,21 @@ public:
            n = true;
            for (int j = 0; j < m.length();j++)
            {
-             if (!(a[m[j]]))
-             {
-                n= false;
-                break;
-             }
-             else
-             {
+            
+             
                 b[m[j]]++;
-             }
+             
             
            }
-           if (n)
-           {
+          
                for (int j = 0; j < m.length();j++)
              {
-             if (a[m[j]] != b[m[j]])
+             if (!(a[m[j]]) || a[m[j]] != b[m[j]])
              {
                  n = false;
                  break;
              }
-           }
+          
            }
           
            
