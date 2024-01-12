@@ -18,7 +18,7 @@ public:
                   for (char c:ch)
                   {
                       chars[++startIndex] = c; 
-                   }
+                  }
                    count = 1;
                    
                }
@@ -27,7 +27,7 @@ public:
            }
        }
        
-    chars.resize(startIndex);
-     return chars.size();
+    
+    return startIndex;
     }
 };
