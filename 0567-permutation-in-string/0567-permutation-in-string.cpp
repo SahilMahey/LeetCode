@@ -6,7 +6,6 @@ public:
            return false;
        }
        unordered_map<char,int>a;
-       
        for (int j = 0; j < s1.length();j++)
        {
                a[s1[j]]++;
@@ -17,14 +16,24 @@ public:
        {
            m = s2.substr(i,s1.length());
            unordered_map<char,int>b;
+           n = true;
            for (int j = 0; j < m.length();j++)
            {
-             b[m[j]]++;
+             if (!(a[m[j]]))
+             {
+                n= false;
+                break;
+             }
+             else
+             {
+                b[m[j]]++;
+             }
+            
            }
-          n = true;
-           for (int j = 0; j < m.length();j++)
+          
+           for (int j = 0 && n; j < m.length();j++)
            {
-             if (!(a[m[j]]) || a[m[j]] != b[m[j]])
+             if (a[m[j]] != b[m[j]])
              {
                  n = false;
                  break;
