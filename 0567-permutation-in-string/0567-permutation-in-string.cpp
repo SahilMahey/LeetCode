@@ -31,10 +31,6 @@ public:
                else
                {
                    b[s2[j-(s1.length()-1)] - 'a']--;
-                   for (auto a: b)
-                   {
-                       cout<<a;
-                   }
                }
                k = s1.length()-1;
            }
