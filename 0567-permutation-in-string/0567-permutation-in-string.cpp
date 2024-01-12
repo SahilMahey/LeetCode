@@ -14,19 +14,20 @@ public:
            
            a[s1[i] - 'a']++;
        }
+       int window_size = s1.length();
        int k = 0;
        for (int j = 0; j < s2.length(); j++)
        {
            
            b[s2[j] - 'a']++;
-           if (k == s1.length()-1)
+           if (k == window_size-1)
            {
                if (a==b)
                {
                    return true;
                }
-               b[s2[j-(s1.length()-1)] - 'a']--;
-               k = s1.length()-1;
+               b[s2[j-(window_size-1)] - 'a']--;
+               k = window_size-1;
            }
            else
            {
