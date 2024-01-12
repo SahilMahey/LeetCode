@@ -26,7 +26,7 @@ public:
            for (int j = 0; j < m.length();j++)
            {
              
-             if (!(a[m[j]]))
+             if (!(b[s1[j]]))
              {
                  n = false;
                  break;
