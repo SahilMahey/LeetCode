@@ -15,7 +15,7 @@ public:
            
            a[s1[i] - 'a']++;
        }
-       string m = " ";
+       
        for (int j = 0; j <= s2.length()-s1.length(); j++)
        {
            
