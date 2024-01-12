@@ -27,6 +27,7 @@ public:
              if (!(a[m[j]]) || a[m[j]] != b[m[j]])
              {
                  n = false;
+                 break;
              }
            }
            if (n)
