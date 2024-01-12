@@ -18,19 +18,20 @@ public:
        string m = " ";
        for (int j = 0; j <= s2.length()-s1.length(); j++)
        {
-           m = s2.substr(j,s1.length());
-           for (int k = 0; k < m.length(); k++)
+           
+           for (int k = 0; k < s1.length(); k++)
            {
-                b[m[k] - 'a']++;
+                b[s2[k+j] - 'a']++;
+               
            }
            if (a == b)
            {
                return true;
            }
-           for (int k = 0; k < m.length(); k++)
+           for (int k = 0; k < s1.length(); k++)
            {
                 
-                b[m[k] - 'a'] = 0;
+                b[s2[k+j] - 'a'] = 0;
            }
            
        }
