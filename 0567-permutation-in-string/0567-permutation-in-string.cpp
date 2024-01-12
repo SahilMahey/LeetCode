@@ -1,23 +1,51 @@
 class Solution {
 public:
     bool checkInclusion(string s1, string s2) {
-        if (s2.length()<s1.length())
-        {
-            return false;
-        }
-        int i = 0;
-        string p;
-        sort(s1.begin(),s1.end());
-        while (i <= (s2.length()-s1.length()))
-        {
-            p = s2.substr(i, s1.length());
-            sort(p.begin(),p.end());
-            if(s1==p)
-            {
-                return true;
-            }
-            i++;
-        }
+       if (s2.length()<s1.length())
+       {
+           return false;
+       }
+       map<char,int>a;
+       
+       for (int j = 0; j < s1.length();j++)
+       {
+               a[s1[j]]++;
+       }
+       string m = " ";
+       for (int i = 0; i <= s2.length()-s1.length(); i++)
+       {
+           m = s2.substr(i,s1.length());
+    
+          
+           map<char,int>b;
+           for (int j = 0; j < m.length();j++)
+           {
+             b[m[j]]++;
+           }
+           bool n = true;
+           for (int j = 0; j < m.length();j++)
+           {
+             
+             if (!(a[m[j]]))
+             {
+                 n = false;
+                 break;
+             }
+             else if (a[m[j]] != b[m[j]])
+             {
+                 n = false;
+                 break;
+             }
+           }
+           if (n)
+           {
+               return n;
+           }
+           
+            
+           
+           
+       }
         return false;
     }
 };
