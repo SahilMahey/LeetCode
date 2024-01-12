@@ -18,9 +18,8 @@ public:
        int k = 0;
        for (int j = 0; j < s2.length(); j++)
        {
-           
            b[s2[j] - 'a']++;
-           if (k == window_size-1)
+           if (j >= window_size-1)
            {
                if (a==b)
                {
