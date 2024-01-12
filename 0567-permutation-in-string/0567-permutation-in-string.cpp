@@ -21,7 +21,6 @@ public:
            b[s2[j] - 'a']++;
            if (k == s1.length()-1)
            {
-               
                if (a==b)
                {
                    return true;
