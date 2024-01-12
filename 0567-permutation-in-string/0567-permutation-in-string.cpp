@@ -24,16 +24,13 @@ public:
            for (int j = 0 && n; j < m.length();j++)
            {
              
-             if (!(b[s1[j]]))
+             if (!(b[s1[j]]) || a[m[j]] != b[m[j]])
              {
                  n = false;
                 
              }
-             else if (a[m[j]] != b[m[j]])
-             {
-                 n = false;
-                 
-             }
+             
+            
            }
            if (n)
            {
