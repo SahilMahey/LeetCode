@@ -1,10 +1,9 @@
 class Solution {
 public:
     string removeDuplicates(string s) {
-       int i = 1;
        string n;
        n.push_back(s[0]);
-       while (i < s.length())
+       for(int i=1 ; i<s.length() ; i++)
        {
            if(!n.empty() && n.back() == s[i] )
              {
@@ -14,7 +13,7 @@ public:
              {
                  n.push_back(s[i]);
              }
-          i++;
+         
        }
        return n;
        
