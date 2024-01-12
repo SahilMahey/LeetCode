@@ -5,7 +5,7 @@ public:
        {
            return false;
        }
-       map<char,int>a;
+       unordered_map<char,int>a;
        
        for (int j = 0; j < s1.length();j++)
        {
@@ -17,7 +17,7 @@ public:
            m = s2.substr(i,s1.length());
     
           
-           map<char,int>b;
+           unordered_map<char,int>b;
            for (int j = 0; j < m.length();j++)
            {
              b[m[j]]++;
