@@ -27,7 +27,7 @@ public:
                    return true;
                }
                b[s2[j-(window_size-1)] - 'a']--;
-               k = window_size-1;
+               
            }
            else
            {
