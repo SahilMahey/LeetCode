@@ -15,26 +15,24 @@ public:
        for (int i = 0; i <= s2.length()-s1.length(); i++)
        {
            m = s2.substr(i,s1.length());
-    
-          
            unordered_map<char,int>b;
            for (int j = 0; j < m.length();j++)
            {
              b[m[j]]++;
            }
            bool n = true;
-           for (int j = 0; j < m.length();j++)
+           for (int j = 0 && n; j < m.length();j++)
            {
              
              if (!(b[s1[j]]))
              {
                  n = false;
-                 break;
+                
              }
              else if (a[m[j]] != b[m[j]])
              {
                  n = false;
-                 break;
+                 
              }
            }
            if (n)
