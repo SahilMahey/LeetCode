@@ -7,34 +7,43 @@ public:
        }
         
        vector<int>a(26,0);
-       
-         
        vector<int>b(26,0);
+       
        for (int i = 0; i < s1.length(); i++)
        {
            
            a[s1[i] - 'a']++;
        }
-       
-       for (int j = 0; j <= s2.length()-s1.length(); j++)
+       int k = 0;
+       for (int j = 0; j < s2.length(); j++)
        {
            
-           for (int k = 0; k < s1.length(); k++)
+           b[s2[j] - 'a']++;
+           cout<<j<<"j";
+           
+           if (k == s1.length()-1)
            {
-                b[s2[k+j] - 'a']++;
                
+               if (a==b)
+               {
+                   return true;
+               }
+               else
+               {
+                   b[s2[j-(s1.length()-1)] - 'a']--;
+                   for (auto a: b)
+                   {
+                       cout<<a;
+                   }
+               }
+               k = s1.length()-1;
            }
-           if (a == b)
+           else
            {
-               return true;
-           }
-           for (int k = 0; k < s1.length(); k++)
-           {
-                
-                b[s2[k+j] - 'a'] = 0;
+               k++;
            }
            
-       }
+        }
        
        return false;
     }
