@@ -5,43 +5,36 @@ public:
        {
            return false;
        }
-       unordered_map<char,int>a;
-       for (int j = 0; j < s1.length();j++)
+        
+       vector<int>a(26,0);
+       vector<int>b(26,0);
+       int ch_num;
+       for (int i = 0; i < s1.length(); i++)
        {
-               a[s1[j]]++;
+           ch_num = s1[i] - 'a';
+           a[ch_num]++;
        }
        string m = " ";
-       bool n;
-       for (int i = 0; i <= s2.length()-s1.length(); i++)
+       for (int j = 0; j <= s2.length()-s1.length(); j++)
        {
-           m = s2.substr(i,s1.length());
-           unordered_map<char,int>b;
-           n = true;
-           for (int j = 0; j < m.length();j++)
+           m = s2.substr(j,s1.length());
+           for (int k = 0; k < m.length(); k++)
            {
-            
-             
-                b[m[j]]++;
-             
-            
+                ch_num = m[k] - 'a';
+                b[ch_num]++;
            }
-          
-               for (int j = 0; j < m.length();j++)
-             {
-             if (!(a[m[j]]) || a[m[j]] != b[m[j]])
-             {
-                 n = false;
-                 break;
-             }
-          
+           if (a == b)
+           {
+               return true;
            }
-          
+           for (int k = 0; k < m.length(); k++)
+           {
+                ch_num = m[k] - 'a';
+                b[ch_num] = 0;
+           }
            
-           if (n)
-           {
-               return n;
-           }
-}
-        return false;
+       }
+       
+       return false;
     }
 };
