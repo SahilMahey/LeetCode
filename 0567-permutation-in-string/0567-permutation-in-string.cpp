@@ -30,15 +30,19 @@ public:
              }
             
            }
-          
-           for (int j = 0 && n; j < m.length();j++)
+           if (n)
            {
+               for (int j = 0; j < m.length();j++)
+             {
              if (a[m[j]] != b[m[j]])
              {
                  n = false;
                  break;
              }
            }
+           }
+          
+           
            if (n)
            {
                return n;
