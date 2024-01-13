@@ -4,12 +4,16 @@ public:
         vector<int>ans;
         for(int i = 0; i < words.size(); i++)
         {
-            
-            auto res = find(words[i].begin(), words[i].end(), x);
-            if (res != end(words[i])) {
-                ans.push_back(i);
+            for(auto j:words[i])
+            {
+                if(j==x)
+                {
+                    ans.push_back(i);
+                    break;
+                }
             }
         }
+        
         return ans;
     }
 };
