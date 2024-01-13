@@ -8,7 +8,7 @@ public:
         {
             m = tolower(s[i]);
             n = tolower(s[j]);
-            cout <<m << " "<<n;
+           
             if ((m =='a' || m=='e' || m=='i' || m=='o' || m=='u') && (n =='a' || n=='e' || n=='i' || n=='o' || n=='u' ))
             {
                 swap(s[i],s[j]);
