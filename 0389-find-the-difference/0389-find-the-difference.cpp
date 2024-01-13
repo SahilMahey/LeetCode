@@ -7,9 +7,6 @@ public:
         {
             ch = ch ^ (s[i]^t[i]);
         }
-        
-        cout<<ch;
-        
         return ch;
     }
 };
