@@ -6,7 +6,7 @@ public:
            int i = 0;
             while (ans.length()!=0 && i < strs.size())
             {
-                if (ans[k]== strs[i][k] && (k < ans.size() && k < strs[i].size()))
+                if (ans[k]== strs[i][k]  && k < strs[i].size())
                 {
                     k++;
                 }
