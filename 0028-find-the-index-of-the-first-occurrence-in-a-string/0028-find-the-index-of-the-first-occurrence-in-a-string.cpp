@@ -5,7 +5,7 @@ public:
         {
             return -1;
         }
-        int index =  haystack.find(needle);
+        
         if (haystack.find(needle)!=string::npos)
         {
             return haystack.find(needle);
