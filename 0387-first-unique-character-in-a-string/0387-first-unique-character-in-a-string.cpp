@@ -2,9 +2,9 @@ class Solution {
 public:
     int firstUniqChar(string s) {
         unordered_map<char,int>ans;
-        for (int i = 0; i < s.length();i++)
+        for (char c:s)
         {
-            ans[s[i]]++;
+            ans[c]++;
         }
          for (int i = 0; i < s.length();i++)
         {
