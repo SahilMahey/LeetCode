@@ -1,6 +1,7 @@
 class Solution {
 public:
     int firstUniqChar(string s) {
+        int a[26] = {0};
         unordered_map<char,int>ans;
         for (int i = 0; i < s.length();i++)
         {
