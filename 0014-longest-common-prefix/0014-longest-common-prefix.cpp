@@ -7,7 +7,7 @@ public:
         {
             
             k = 0;
-            while (ans[k]==strs[i][k] && ans.length()>0 && (k < ans.size() && k < strs[i].size()))
+            while (ans[k]==strs[i][k] && (k < ans.size() && k < strs[i].size()))
             {
                 k++;
             }
