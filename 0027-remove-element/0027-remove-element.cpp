@@ -27,8 +27,6 @@ public:
             {
                 i++;
             }
-            cout<<i;
-            cout<<count<<endl;
             
         }
         
