@@ -12,48 +12,48 @@ public:
             {
                 temp_1 = matrix[i][j];
                 matrix[i][j] = matrix[r_s][i];
-                for (int m = 0; m < matrix.size(); m++)
-                {
-                  for (int n = 0; n < matrix.size(); n++)
-                  {
-                    cout << matrix[m][n] << " ";
-                  }
-                  cout<<endl;
-                }
-                cout<<endl;
+                // for (int m = 0; m < matrix.size(); m++)
+                // {
+                //   for (int n = 0; n < matrix.size(); n++)
+                //   {
+                //     cout << matrix[m][n] << " ";
+                //   }
+                //   cout<<endl;
+                // }
+                // cout<<endl;
                 
                 temp_2= matrix[r_e][c_e-k];
                 matrix[r_e][c_e-k] = temp_1;
-                for (int m = 0; m < matrix.size(); m++)
-                {
-                  for (int n = 0; n < matrix.size(); n++)
-                  {
-                    cout << matrix[m][n] << " ";
-                  }
-                  cout<<endl;
-                }
-                cout<<endl;
+                // for (int m = 0; m < matrix.size(); m++)
+                // {
+                //   for (int n = 0; n < matrix.size(); n++)
+                //   {
+                //     cout << matrix[m][n] << " ";
+                //   }
+                //   cout<<endl;
+                // }
+                //cout<<endl;
                 temp_1 = matrix[r_e-k][c_s];
                 matrix[r_e-k][c_s] = temp_2;
-                for (int m = 0; m < matrix.size(); m++)
-                {
-                  for (int n = 0; n < matrix.size(); n++)
-                  {
-                    cout << matrix[m][n] << " ";
-                  }
-                  cout<<endl;
-                }
-                 cout<<endl;
+                // for (int m = 0; m < matrix.size(); m++)
+                // {
+                //   for (int n = 0; n < matrix.size(); n++)
+                //   {
+                //     cout << matrix[m][n] << " ";
+                //   }
+                //   cout<<endl;
+                // }
+                 //cout<<endl;
                 matrix[r_s][i] = temp_1;
-               for (int m = 0; m < matrix.size(); m++)
-                {
-                  for (int n = 0; n < matrix.size(); n++)
-                  {
-                    cout << matrix[m][n] << " ";
-                  }
-                  cout<<endl;
-                }
-                 cout<<endl;
+               // for (int m = 0; m < matrix.size(); m++)
+               //  {
+               //    for (int n = 0; n < matrix.size(); n++)
+               //    {
+               //      cout << matrix[m][n] << " ";
+               //    }
+               //    cout<<endl;
+               //  }
+               //   cout<<endl;
                 i++;
                 k++;
             }
@@ -62,7 +62,7 @@ public:
             i = c_s;
             j = c_e;
             k = 0;
-            cout << i << " " << j << endl;
+            //cout << i << " " << j << endl;
         }
     
     }
