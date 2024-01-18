@@ -14,11 +14,11 @@ public:
                 matrix[i][j] = matrix[r_s][i];
                 
                 
-                temp_2= matrix[r_e][c_e-k];
-                matrix[r_e][c_e-k] = temp_1;
+                temp_2= matrix[r_e][r_e-k];
+                matrix[r_e][r_e-k] = temp_1;
              
-                temp_1 = matrix[r_e-k][c_s];
-                matrix[r_e-k][c_s] = temp_2;
+                temp_1 = matrix[r_e-k][r_s];
+                matrix[r_e-k][r_s] = temp_2;
                 
                 matrix[r_s][i] = temp_1;
               
