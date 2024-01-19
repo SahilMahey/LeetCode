@@ -5,9 +5,9 @@ public:
      {
          return true;
      }
-      while (n > 0  && n%3==0)
+      while (n > 0 && n%3==0)
       {
-          if (n <=3 && n/3==1 )
+          if (n/3==1 )
           {
              return true;
           }
