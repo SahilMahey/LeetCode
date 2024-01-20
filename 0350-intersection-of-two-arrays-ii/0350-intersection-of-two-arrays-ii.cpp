@@ -9,18 +9,14 @@ public:
         }
         for (int i = 0; i < nums2.size(); i++)
         {
-            ans_2[nums2[i]]++;
-        }
-        
-        for (int i = 0; i < nums1.size(); i++ )
-        {
-            if (ans_1[nums1[i]]>0 && ans_2[nums1[i]]>0)
+            if (ans_1[nums2[i]]>0)
             {
-                k.push_back(nums1[i]);
-                ans_1[nums1[i]]--;
-                ans_2[nums1[i]]--;
+                k.push_back(nums2[i]);
+                ans_1[nums2[i]]--;
             }
         }
+        
+        
         return k;
     }
 };
